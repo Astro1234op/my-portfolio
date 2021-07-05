@@ -1,0 +1,70 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration-color: aliceblue;
+    color: white;
+    background: #152238;   
+    text-align: center;
+
+}
+
+.header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(View-Andromeda-Galaxy.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1abc9c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.hero-btn{
+    display: inline-block  ;
+    text-decoration: none  ;
+    color         :#fff  ;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #1abc9c;
+    background: #1abc9c;
+    transition: 1s;
+}
